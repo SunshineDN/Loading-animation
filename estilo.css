@@ -1,0 +1,50 @@
+body {
+    height: 100vh;
+    background-image: linear-gradient(180deg, rgb(7, 0, 49), rgb(37, 21, 131));
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 15px;
+}
+
+.item {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: white;
+    box-shadow: 2px 2px rgba(168, 168, 168, 0.473);
+}
+
+#item1 {
+    animation: escalar 2s linear infinite;
+    animation-delay: 0ms;
+}
+
+#item2 {
+    animation: escalar 2s linear infinite;
+    animation-delay: 500ms;
+}
+
+#item3 {
+    animation: escalar 2s linear infinite;
+    animation-delay: 1000ms;
+}
+
+@keyframes escalar {
+    0% {
+        transform: scale(1);
+    }
+    
+    50% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
